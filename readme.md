@@ -18,6 +18,7 @@ Et program som sjekker hvor mange produkter en butikk har av en vare, og skriver
 9. Output the stock status and the calculated discount percentage to the terminal.
 
 ## 2. Test Values and Results
+### no object edition
 To ensure the program logic works correctly, I tested the following scenarios:
 
 | Test Input | Expected Outcome | Logic Path Tested |
@@ -29,7 +30,17 @@ To ensure the program logic works correctly, I tested the following scenarios:
 | `-10` | Error Message | `else` (Negative check) |
 | `abc` | Invalid Input | `int.TryParse` Failure |
 
+### Test Cases (Object-Based)
+I initialized the `Product` class with different values to test the logic:
+
+| Product Name | Input Stock | Price | Expected Discount |
+| :--- | :--- | :--- | :--- |
+| Laptop | 120 | 5000 | 50% (Clearance) |
+| Phone | 60 | 3000 | 30% (Seasonal) |
+| Mouse | 5 | 200 | 0% (Low Stock) |
+
+
 ## 3. How to Run (Local)
 Since I am working in a restricted IT environment, I use the following commands:
 1. `dotnet build`
-2. `dotnet exec bin/Debug/net8.0/Assignment_1.dll`
+2. `dotnet exec bin/Debug/net10.0/oppgave1.dll`
