@@ -39,6 +39,13 @@ I initialized the `Product` class with different values to test the logic:
 | Phone | 60 | 3000 | 30% (Seasonal) |
 | Mouse | 5 | 200 | 0% (Low Stock) |
 
+### User Interaction
+The program now supports dynamic user input. 
+Example sequence:
+1. User enters "Mechanical Keyboard"
+2. User enters "1200" (Price)
+3. User enters "110" (Stock) -> Logic triggers 50% discount.
+
 
 ## 3. How to Run (Local)
 Since I am working in a restricted IT environment, I use the following commands:
